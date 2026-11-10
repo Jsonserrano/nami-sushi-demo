@@ -1,0 +1,88 @@
+/* Propuesta: portada llamativa, idioma, más pedidos */
+
+/* Botón de idioma — pequeño y claro */
+.idioma { display: inline-flex; align-items: center; gap: 4px; border: 1px solid var(--borde); border-radius: 999px; padding: 0 4px 0 9px; height: 32px; margin-right: .25rem; align-self: center; cursor: pointer; color: var(--suave); }
+.idioma select { border: 0; background: transparent; font: inherit; font-size: 13px; font-weight: 700; color: var(--texto); padding: 4px 2px; cursor: pointer; outline-offset: 2px; }
+.idioma .icono { width: 15px; height: 15px; }
+
+/* Portada */
+.portada { position: relative; overflow: hidden; background: radial-gradient(1200px 500px at 85% 20%, #3a1716 0%, #160c0b 55%, #0d0807 100%); color: #fff; }
+.portada::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(135deg, rgba(255,255,255,.025) 0 2px, transparent 2px 14px); pointer-events: none; }
+.portada-fila { position: relative; display: grid; grid-template-columns: 1.05fr 1fr; gap: 2rem; align-items: center; min-height: 460px; padding-top: 3rem; padding-bottom: 3rem; }
+.sello { display: inline-block; background: rgba(233, 90, 87, .18); border: 1px solid rgba(233, 90, 87, .55); color: #ffb3b0; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 700; letter-spacing: .03em; }
+.portada h1 { font-family: var(--titulo); font-variant: small-caps; font-size: clamp(36px, 5vw, 62px); line-height: 1.05; letter-spacing: .03em; margin: 1.1rem 0 1rem; }
+.portada h1 em { font-style: normal; color: var(--primario); }
+.portada p { font-size: 17px; line-height: 1.6; color: #e8d9d4; max-width: 34rem; margin: 0 0 1.75rem; }
+.portada-botones { display: flex; flex-wrap: wrap; gap: .75rem; }
+.boton-primario.grande { display: inline-flex; align-items: center; padding: .9rem 1.6rem; font-size: 16px; text-decoration: none; border-radius: 10px; box-shadow: 0 8px 24px rgba(233, 90, 87, .35); }
+.boton-wa { display: inline-flex; align-items: center; gap: .55rem; padding: .9rem 1.4rem; border-radius: 10px; border: 1.5px solid #25d366; color: #fff; font-weight: 700; font-size: 16px; text-decoration: none; }
+.boton-wa img { width: 22px; height: 22px; }
+.boton-wa:hover { background: rgba(37, 211, 102, .12); }
+.datos { display: flex; gap: 2rem; list-style: none; padding: 0; margin: 2.25rem 0 0; }
+.datos strong { display: block; font-size: 26px; font-family: var(--titulo); color: #fff; }
+.datos span { font-size: 13px; color: #bfaea9; }
+
+.portada-fotos { position: relative; height: 400px; }
+.portada-fotos img { position: absolute; object-fit: cover; border-radius: 50%; border: 6px solid rgba(255,255,255,.08); box-shadow: 0 20px 50px rgba(0,0,0,.55); animation: flotar 6s ease-in-out infinite; }
+.portada-fotos .f1 { width: 300px; height: 300px; top: 30px; left: 18%; z-index: 2; }
+.portada-fotos .f2 { width: 190px; height: 190px; top: 0; right: 0; animation-delay: -2s; }
+.portada-fotos .f3 { width: 170px; height: 170px; bottom: 0; left: 0; animation-delay: -4s; }
+.etiqueta { position: absolute; z-index: 3; background: #fff; color: #111; font-size: 12.5px; font-weight: 700; padding: 7px 12px; border-radius: 999px; box-shadow: 0 8px 20px rgba(0,0,0,.35); white-space: nowrap; }
+.etiqueta.e1 { bottom: 38px; right: 12%; }
+.etiqueta.e2 { top: 190px; right: -6px; }
+@keyframes flotar { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-12px) } }
+
+/* Cinta de promociones */
+.cinta { position: relative; background: var(--primario); overflow: hidden; white-space: nowrap; }
+.cinta-pista { display: inline-flex; gap: 3rem; padding: .7rem 0; animation: correr 32s linear infinite; font-weight: 700; font-size: 15px; }
+.cinta:hover .cinta-pista { animation-play-state: paused; }
+@keyframes correr { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+
+/* Los más pedidos */
+.destacados { padding-top: 2rem; }
+.destacados h2 { font-size: 26px; margin: 0 0 1rem; }
+.carrusel { display: grid; grid-auto-flow: column; grid-auto-columns: 220px; gap: 1rem; overflow-x: auto; padding-bottom: .75rem; scrollbar-width: none; }
+.carrusel::-webkit-scrollbar { display: none; }
+.destacado { scroll-snap-align: start; background: #fff; border-radius: 14px; overflow: hidden; border: 0; padding: 0; text-align: left; box-shadow: 0 2px 8px rgba(0,0,0,.06); transition: transform .2s, box-shadow .2s; }
+.destacado:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,.12); }
+.destacado img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.destacado div { padding: .75rem .9rem .9rem; }
+.destacado strong { display: block; font-family: var(--titulo); font-variant: small-caps; letter-spacing: .05em; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.destacado span { color: var(--primario); font-weight: 700; }
+
+/* Ventana del plato: otras formas de pedir */
+.mp-otras { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; padding: 0 1.5rem 1.25rem; background: #fff; }
+.mp-otras a { justify-content: center; text-decoration: none; height: 40px; white-space: normal; text-align: center; font-size: 13px; font-weight: 700; }
+.mp-otras a.verde { border-color: #25d366; color: #128c4a; }
+
+/* Aparición suave de tarjetas */
+/* (las tarjetas ya no se animan una por una: era pesado al abrir el menú) */
+@keyframes aparecer { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: none } }
+@media (prefers-reduced-motion: reduce) {
+  .portada-fotos img, .cinta-pista, .producto { animation: none; }
+}
+
+/* Botón flotante de Instagram (encima del de WhatsApp) */
+.instagram { position: fixed; right: 20px; bottom: 88px; z-index: 30; width: 56px; height: 56px; border-radius: 50%;
+  display: grid; place-items: center; color: #fff; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
+.instagram svg { width: 30px; height: 30px; fill: none; stroke: #fff; stroke-width: 2; }
+
+@media (max-width: 860px) {
+  .portada-fila { grid-template-columns: 1fr; min-height: 0; padding-top: 2rem; }
+  .portada-fotos { height: 260px; order: -1; }
+  .portada-fotos .f1 { width: 200px; height: 200px; left: 50%; margin-left: -100px; top: 20px; }
+  .portada-fotos .f2 { width: 120px; height: 120px; }
+  .portada-fotos .f3 { width: 110px; height: 110px; }
+  .etiqueta.e2 { top: 150px; }
+  .etiqueta.e1 { bottom: 4px; }
+}
+@media (max-width: 640px) {
+  .portada p { font-size: 15px; }
+  .datos { gap: 1.25rem; }
+  .datos strong { font-size: 20px; }
+  .carrusel { grid-auto-columns: 160px; }
+  .mp-otras { grid-template-columns: 1fr; }
+  .idioma { padding-left: 7px; }
+  .idioma select { font-size: 12px; }
+}

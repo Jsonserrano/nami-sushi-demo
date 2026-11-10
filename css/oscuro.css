@@ -1,0 +1,52 @@
+/* Modo oscuro de la página.
+   Para volver al fondo durazno original, borra la línea de "oscuro.css" en index.html. */
+
+body {
+  --fondo: #141010;
+  --tarjeta: #211a19;
+  --texto: #f3ece8;
+  --suave: #a8998f;
+  --borde: #3a2e2b;
+  --gris: #2c2321;
+  background: var(--fondo);
+  color: var(--texto);
+  color-scheme: dark;
+}
+
+/* El encabezado se queda blanco para que el logo (letras negras) se lea bien */
+.encabezado {
+  --texto: #000; --suave: #737373; --borde: #e5e5e5; --gris: #f5f5f5;
+  color: #000;
+  color-scheme: light;
+}
+
+/* Tarjetas de platos */
+.producto { background: var(--tarjeta); border-color: var(--borde); }
+.producto:hover { box-shadow: 0 6px 20px rgba(0, 0, 0, .5); border-color: #4a3a36; }
+.producto .foto { background: var(--gris); }
+.destacado { background: var(--tarjeta); box-shadow: 0 2px 10px rgba(0, 0, 0, .4); }
+.destacado:hover { box-shadow: 0 14px 30px rgba(0, 0, 0, .6); }
+.sin-resultados { background: var(--tarjeta); }
+
+/* Barra lateral: puntos y carrito */
+.tarjeta { background: var(--tarjeta); box-shadow: 0 1px 3px rgba(0, 0, 0, .4); border: 1px solid var(--borde); }
+.cantidad { border-color: var(--borde); }
+.cantidad button { background: var(--tarjeta); color: var(--texto); }
+.cantidad button:hover { background: var(--gris); }
+
+/* Ventanas (plato, dirección, carrito en celular) */
+.capa { background: rgba(0, 0, 0, .7); }
+.modal, .mp-pie, .mp-otras { background: var(--tarjeta); color: var(--texto); }
+.mp-nota textarea, .modal-chico input, .modal-chico select { background: var(--gris); border-color: var(--borde); color: var(--texto); }
+.mp-otras a.verde { color: #4fd98a; }
+.pestana.activa { background: #3a2e2b; box-shadow: none; }
+.cerrar { background: rgba(33, 26, 25, .95); color: var(--texto); }
+
+/* Pie de página */
+.pie { background: #0d0a09; border-top: 1px solid var(--borde); }
+.pie a { color: #cfc3bc; }
+.pie a:hover { color: var(--primario); }
+.pie-logo img { background: #fff; padding: 10px 16px; border-radius: 12px; box-sizing: content-box; }
+
+/* Separación suave entre la portada y la carta */
+.cinta { box-shadow: 0 6px 20px rgba(0, 0, 0, .35); }

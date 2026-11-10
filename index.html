@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141010">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="img/logo.svg">
+  <title>Nami Sushi Bar | Demo de tienda en línea</title>
+  <meta name="description" content="Nami Sushi Bar: tienda en línea de demostración para un restaurante ficticio. Carta con fotos, 3 idiomas, 3 monedas y carrito. Hecho por Jeison Serrano.">
+  <link rel="icon" href="img/logo.svg">
+  <link rel="preload" as="image" href="img/inicio/portada.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=20261109k">
+  <link rel="stylesheet" href="css/propuesta.css?v=20261109k">
+  <link rel="stylesheet" href="css/oscuro.css?v=20261109k">
+  <link rel="stylesheet" href="css/paginas.css?v=20261109m">
+</head>
+<body>
+
+  <!-- ===================== INICIO ===================== -->
+  <div class="vista" data-vista="inicio">
+  <!-- Portada -->
+  <section class="ini-portada">
+    <div class="ini-foto"><img src="img/inicio/portada.webp" alt="Bandeja de sushi variado de Nami Sushi Bar"><span class="ini-vapor" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+    <div class="ini-olas" aria-hidden="true"></div>
+    <div class="contenedor ini-portada-fila">
+      <div class="ini-texto">
+        <p class="ini-sobre">NAMI SUSHI BAR · BOGOTÁ</p>
+        <h1>Una ola de sabor. <em>Directo a tu mesa.</em></h1>
+        <p>Rolls, ramen y pokes preparados al momento.</p>
+        <div class="ini-botones">
+          <a class="boton-primario" href="#/menu">Pedir ahora</a>
+          <a class="ini-link" href="#/menu">Ver menú →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portada portada-cinta">
+    <div class="cinta"><div class="cinta-pista">
+      <span>🔥 2x1 Philadelphia $29.900</span><span>🍣 Combo Pareja -20%</span><span>🍜 Ramen tonkotsu $38.900</span><span>🥢 Nuevo: Tuna Crunch</span><span>🍵 Matcha latte $12.900</span>
+      <span>🔥 2x1 Philadelphia $29.900</span><span>🍣 Combo Pareja -20%</span><span>🍜 Ramen tonkotsu $38.900</span><span>🥢 Nuevo: Tuna Crunch</span><span>🍵 Matcha latte $12.900</span>
+    </div></div>
+  </section>
+
+  <main class="contenedor">
+    <!-- Categorías -->
+    <nav class="ini-categorias" aria-label="Categorías">
+      <a class="ini-cat" href="#/menu/c-sushi"><img src="img/platos/nami-roll.webp" alt="Nami Roll">Sushi</a>
+      <a class="ini-cat" href="#/menu/c-combos"><img src="img/platos/combo-fiesta.webp" alt="Combo Fiesta">Combos</a>
+      <a class="ini-cat" href="#/menu/c-pokes"><img src="img/platos/poke-atun.webp" alt="Poke de atún">Pokes</a>
+      <a class="ini-cat" href="#/menu/c-ramen"><img src="img/platos/ramen-tonkotsu.webp" alt="Ramen tonkotsu">Ramen</a>
+      <a class="ini-cat" href="#/menu/c-postres"><img src="img/platos/mochis.webp" alt="Mochis">Postres</a>
+    </nav>
+
+    <!-- Los favoritos -->
+    <div class="ini-titulo">
+      <h2 class="titulo-orator">Los favoritos de Nami</h2>
+      <a href="#/menu">Ver todo el menú →</a>
+    </div>
+    <div class="ini-favoritos">
+      <article class="ini-fav">
+        <img src="img/platos/nami-roll.webp" alt="Nami Roll">
+        <div><h3 class="titulo-orator">Nami Roll</h3>
+          <p>Nuestro roll de la casa: salmón flameado, queso crema y aguacate, con salsa de la casa y cebollín.</p>
+          <a href="#/plato/n-nami-roll">Ver producto</a></div>
+      </article>
+      <article class="ini-fav">
+        <img src="img/platos/dragon-teriyaki.webp" alt="Dragón Teriyaki">
+        <div><h3 class="titulo-orator">Dragón Teriyaki</h3>
+          <p>Langostino tempura y pepino, cubierto de aguacate y bañado en salsa teriyaki.</p>
+          <a href="#/plato/n-dragon">Ver producto</a></div>
+      </article>
+      <article class="ini-fav">
+        <img src="img/platos/ramen-tonkotsu.webp" alt="Ramen tonkotsu">
+        <div><h3 class="titulo-orator">Ramen tonkotsu</h3>
+          <p>Caldo cremoso de cerdo cocinado por horas, con chashu, huevo marinado y cebollín.</p>
+          <a href="#/plato/n-ramen-tonkotsu">Ver producto</a></div>
+      </article>
+    </div>
+
+    <!-- Promociones -->
+    <a class="ini-banner" href="#/menu/c-promos">
+      <img src="img/inicio/banner-promociones.webp" alt="Bandeja de sushi para compartir">
+      <span>Ver promociones</span>
+    </a>
+
+    <!-- Sedes -->
+    <section class="ini-sedes">
+      <svg viewBox="0 0 220 130" aria-hidden="true" fill="none" stroke="#e95a57" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="14 6">
+        <path d="M0 95c30-2 45 15 70 25s45 2 60-5"/><path d="M95 112C70 82 60 64 60 48a35 35 0 0 1 70 0c0 16-10 34-35 64Z"/><circle cx="95" cy="46" r="13"/><ellipse cx="95" cy="117" rx="16" ry="5"/><path d="M130 115c25 6 50-2 85 10"/>
+      </svg>
+      <div>
+        <h2>Nos vemos<br>en Bogotá.</h2>
+        <p>Encuentra tu sede y consulta<br>la cobertura para tu dirección.</p>
+      </div>
+      <a class="boton-primario" href="#/sucursales">Ver sedes</a>
+    </section>
+  </main>
+  </div>
+
+  <!-- ===================== MENU ===================== -->
+  <div class="vista" data-vista="menu" hidden>
+  <section class="portada portada-cinta">
+    <div class="cinta"><div class="cinta-pista">
+      <span>🔥 2x1 Philadelphia $29.900</span><span>🍣 Combo Pareja -20%</span><span>🍜 Ramen tonkotsu $38.900</span><span>🥢 Nuevo: Tuna Crunch</span><span>🍵 Matcha latte $12.900</span>
+      <span>🔥 2x1 Philadelphia $29.900</span><span>🍣 Combo Pareja -20%</span><span>🍜 Ramen tonkotsu $38.900</span><span>🥢 Nuevo: Tuna Crunch</span><span>🍵 Matcha latte $12.900</span>
+    </div></div>
+  </section>
+
+  <section class="contenedor destacados">
+    <h2 class="titulo-orator">Los favoritos de Nami</h2>
+    <div class="carrusel" id="carrusel"></div>
+  </section>
+
+  <div class="contenedor pagina">
+    <main id="carta" class="carta"></main>
+
+    <aside class="lateral">
+      <section class="tarjeta puntos">
+        <div>
+          <h3 class="titulo-orator">Acumula Nami Puntos</h3>
+          <p>Regístrate, gana puntos con tus compras y canjealos por productos y más</p>
+        </div>
+        <button class="boton-primario" id="btnUnete">Únete</button>
+      </section>
+
+      <section class="tarjeta carrito" id="panelCarrito">
+        <h3 class="titulo-orator titulo-carrito">Tu Carrito</h3>
+        <button class="selector-direccion" data-abrir-direccion>
+          <svg viewBox="0 0 24 24" class="icono"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="texto-direccion">¿Dónde quieres pedir?</span>
+          <svg viewBox="0 0 24 24" class="icono flecha"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="contenidoCarrito"></div>
+      </section>
+    </aside>
+  </div>
+  </div>
+
+  <!-- ===================== PLATO ===================== -->
+  <div class="vista" data-vista="plato" hidden>
+  <main class="contenedor" id="plato"></main>
+  </div>
+
+  <!-- ===================== SUCURSALES ===================== -->
+  <div class="vista" data-vista="sucursales" hidden>
+  <main class="contenedor">
+    <h2 class="suc-titulo">¡Busca tu local más cercano!</h2>
+    <div class="suc-grilla" id="sucGrilla"></div>
+  </main>
+  </div>
+
+  <!-- ===================== FRANQUICIAS ===================== -->
+  <div class="vista" data-vista="franquicias" hidden>
+  <main class="contenedor">
+    <section class="franq-galeria">
+      <h2 class="franq-titulo">FRANQUICIAS</h2>
+      <div class="franq-grilla">
+        <div class="franq-foto"><img src="img/galeria/salon.webp" alt="" loading="lazy"></div>
+        <div class="franq-foto"><img src="img/galeria/chef.webp" alt="" loading="lazy"></div>
+        <div class="franq-foto"><img src="img/sedes/sede-1.webp" alt="" loading="lazy"></div>
+        <div class="franq-foto"><img src="img/galeria/emplatado.webp" alt="" loading="lazy"></div>
+        <div class="franq-foto"><img src="img/galeria/cocina.webp" alt="" loading="lazy"></div>
+        <div class="franq-foto"><img src="img/sedes/sede-2.webp" alt="" loading="lazy"></div>
+      </div>
+    </section>
+    <div class="franq-enlaces">
+      <a class="franq-caja" href="#/contacto">
+        <div>
+          <h4>¿QUIERES ABRIR UN NAMI EN TU CIUDAD?</h4>
+          <div class="franq-sub">Cuéntanos de ti y te enviamos toda la información</div>
+        </div>
+        <div class="franq-cta"><span>ESCRÍBENOS</span>
+          <svg width="15" height="15" viewBox="0 0 15 15" aria-hidden="true"><path d="M8.15 3.15a.5.5 0 0 1 .7 0l4 4a.5.5 0 0 1 0 .7l-4 4a.5.5 0 0 1-.7-.7L11.29 8H2.5a.5.5 0 0 1 0-1h8.79L8.15 3.85a.5.5 0 0 1 0-.7Z" fill="currentColor"/></svg></div>
+      </a>
+    </div>
+  </main>
+  </div>
+
+  <!-- ===================== SALUD ===================== -->
+  <div class="vista" data-vista="salud" hidden>
+    <main class="contenedor">
+      <div class="pag-titulo">
+        <h1>Salud</h1>
+        <p>Temas de interés para cuidar tu salud</p>
+      </div>
+      <div class="salud-grilla">
+        <article class="salud-tema">
+          <h2>Sushi</h2>
+          <p>El sushi combina arroz preparado con vinagre de arroz, pescado fresco y vegetales. Es una comida liviana que aporta energía, proteína y grasas buenas.</p>
+        </article>
+        <article class="salud-tema">
+          <h2>Algas nori</h2>
+          <p>El alga nori que envuelve los rolls aporta yodo, minerales y fibra, con muy pocas calorías.</p>
+        </article>
+        <article class="salud-tema">
+          <h2>Salmón</h2>
+          <p>El salmón es rico en omega-3 y en proteína de alta calidad, que ayudan a cuidar el corazón.</p>
+        </article>
+        <article class="salud-tema">
+          <h2>Té verde</h2>
+          <p>El té verde y el matcha tienen antioxidantes naturales y acompañan muy bien una comida japonesa.</p>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <!-- ===================== NOSOTROS ===================== -->
+  <div class="vista" data-vista="nosotros" hidden>
+    <main class="contenedor">
+      <section class="nos">
+        <div>
+          <div class="pag-titulo"><h1>Nosotros</h1></div>
+          <p>Nami significa “ola” en japonés. Nacimos con una idea sencilla: llevar sushi fresco, hecho al momento, a cada rincón de Bogotá.</p>
+          <p>En nuestra cocina cada roll se arma a mano, con pescado seleccionado cada mañana y salsas de la casa. Nos gusta mezclar la tradición japonesa con sabores de Colombia, como el mango, la maracuyá y el aguacate.</p>
+          <a class="boton-primario" href="#/sucursales">Visítanos</a>
+        </div>
+        <div class="nos-fotos">
+          <img src="img/galeria/chef.webp" alt="Chef de Nami preparando sushi">
+          <img src="img/galeria/emplatado.webp" alt="Emplatado de sushi en la barra">
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <div class="vista" data-vista="contacto" hidden>
+    <main class="contenedor">
+      <section class="contacto">
+        <div>
+          <div class="pag-titulo">
+            <h1>¿Dudas o Consultas?</h1>
+            <p>Completa nuestro formulario y te responderemos a la brevedad!</p>
+          </div>
+          <ul class="contacto-datos">
+            <li>💬 <a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li>📍 <a href="#/sucursales">Ver nuestras sedes</a></li>
+          </ul>
+        </div>
+        <form class="contacto-form" id="formContacto" novalidate>
+          <label>Nombre<input name="nombre" autocomplete="name" required></label>
+          <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          <label>Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
+          <label class="autorizo"><input type="checkbox" name="datos" required><span>Autorizo el tratamiento de mis datos según la <a href="#/politica-de-datos">política de datos</a> (Ley 1581 de 2012).</span></label>
+          <button class="boton-primario ancho" type="submit">Enviar mensaje</button>
+          <p class="nota-pago">Tu mensaje se envía por WhatsApp a Nami.</p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+
+  <!-- ===================== POLÍTICA DE DATOS ===================== -->
+  <div class="vista" data-vista="politica-de-datos" hidden>
+    <main class="contenedor legal">
+      <div class="pag-titulo"><h1>Políticas de tratamiento de base de datos</h1>
+        <p>Texto de ejemplo para esta página de demostración. Un restaurante real debe publicar aquí su propia política, según la Ley 1581 de 2012.</p></div>
+      <article class="leg-doc">
+        <h2>¿Qué datos pedimos?</h2>
+        <p>Nombre, teléfono, correo y dirección de entrega, solo para preparar y llevar tu pedido.</p>
+        <h2>¿Para qué los usamos?</h2>
+        <p>Para entregar tu pedido, avisarte cómo va y, si lo autorizas, enviarte promociones.</p>
+        <h2>Tus derechos</h2>
+        <p>Puedes pedir en cualquier momento que actualicemos o borremos tus datos.</p>
+      </article>
+    </main>
+  </div>
+
+  <!-- ===================== CANCELACIONES ===================== -->
+  <div class="vista" data-vista="cancelaciones" hidden>
+    <main class="contenedor legal">
+      <div class="pag-titulo"><h1>Política de Cancelación y Devoluciones</h1>
+        <p>En nuestro restaurante trabajamos con productos preparados al momento, por lo que aplican las siguientes condiciones:</p></div>
+      <div class="leg-preguntas">
+        <details class="leg-preg"><summary>¿Puedo cancelar mi pedido?</summary><div><p>Si, el pedido se puede cancelar pero debido a que se trata de comida preparada, solo dispones de <strong>10 minutos</strong> para solicitar la cancelación a partir del momento en que el restaurante acepta el pedido.</p><p>Una vez pasado este tiempo, el pedido entra en proceso de preparación y no será posible cancelar ni realizar devoluciones.</p></div></details>
+        <details class="leg-preg"><summary>¿Cómo cancelar mi pedido?</summary><div><p>Para gestionar la cancelación debes comunicarte de inmediato al siguiente número:</p><p>💬 <a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></p></div></details>
+        <details class="leg-preg"><summary>¿Dónde me reembolsarán el dinero?</summary><div><ul><li>Reembolsamos el dinero en el mismo medio de pago que usaste para comprar.</li></ul></div></details>
+        
+      </div>
+    </main>
+  </div>
+
+  <!-- ===================== TÉRMINOS Y PRIVACIDAD ===================== -->
+  <div class="vista" data-vista="documentos-legales" hidden>
+    <main class="contenedor legal">
+      <div class="pag-titulo"><h1>Documentos legales</h1></div>
+      <div class="leg-pestanas">
+        <a href="#/documentos-legales/terminos" data-doc="terminos">Términos y Condiciones</a>
+        <a href="#/documentos-legales/privacidad" data-doc="privacidad">Política de Privacidad</a>
+      </div>
+      <p class="leg-aviso">Documento legal publicado en español, el idioma oficial de Colombia. Si tienes dudas, escríbenos por WhatsApp.</p>
+      <article class="leg-doc leg-pendiente">
+        <p><strong>Documento pendiente.</strong> Esta es una página de demostración: aquí irían los términos del restaurante.</p>
+        <p>Mientras tanto, el tratamiento de tus datos se rige por la <a href="#/politica-de-datos">Política de tratamiento de datos</a> y las cancelaciones por la <a href="#/cancelaciones">Política de Cancelación y Devoluciones</a>.</p>
+      </article>
+    </main>
+  </div>
+
+  <!-- ===================== NAMI PUNTOS ===================== -->
+  <div class="vista" data-vista="puntos" hidden>
+    <main class="contenedor">
+      <section class="puntos-pag">
+        <div class="pag-titulo"><h1>Nami Puntos</h1>
+          <p>Regístrate, gana puntos con tus compras y canjéalos por productos y más.</p></div>
+        <div class="puntos-grilla">
+          <div class="puntos-caja"><strong>5%</strong><span>de cada compra vuelve a ti en puntos</span></div>
+          <div class="puntos-caja"><strong>$15.000</strong><span>mínimo para canjear en un pedido</span></div>
+          <div class="puntos-caja"><strong>$30.000</strong><span>máximo que puedes canjear por pedido</span></div>
+        </div>
+        <ul class="puntos-reglas">
+          <li>Acumulas puntos cada vez que pides con tu cuenta iniciada.</li>
+          <li>Los puntos no se pueden usar junto con cupones de descuento.</li>
+          <li>Cuando canjeas puntos, ese pedido no acumula puntos nuevos.</li>
+        </ul>
+        <div class="puntos-botones">
+          <a class="boton-primario" href="#" data-cuenta="registro">Crear mi cuenta</a>
+          <a class="boton-borde" href="#" data-cuenta="login">Ya tengo cuenta</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>window.WHATSAPP_NAMI = "";</script>
+  <script src="js/menu.js?v=20261109k"></script>
+  <script src="js/menu-en.js?v=20261109k"></script>
+  <script src="js/menu-ja.js?v=20261109k"></script>
+  <script src="js/comun.js?v=20261109k"></script>
+  <script src="js/opciones.js?v=20261109k"></script>
+  <script src="js/opciones-idiomas.js?v=20261109k"></script>
+  <script src="js/opciones-ui.js?v=20261109k"></script>
+  <script src="js/app.js?v=20261109k"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="js/desintegrar.js?v=20261109k"></script>
+  <script src="js/cuenta.js?v=20261109k"></script>
+  <script src="js/plato.js?v=20261109k"></script>
+  <script src="js/sucursales.js?v=20261109k"></script>
+  <script src="js/contacto.js?v=20261109k"></script>
+  <script src="js/propuesta.js?v=20261109k"></script>
+  <script src="js/rutas.js?v=20261109k"></script>
+</body>
+</html>

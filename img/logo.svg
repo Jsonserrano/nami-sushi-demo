@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <title>Nami Sushi Bar</title>
+  <!-- Ola -->
+  <circle cx="50" cy="50" r="40" fill="#e95a57"/>
+  <path d="M14 58c8-10 18-14 28-10s14 14 26 12c8-1 12-6 18-12" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M20 72c8-6 16-7 24-3s14 8 24 6c6-1 10-4 14-8" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+  <circle cx="62" cy="30" r="7" fill="#fff"/>
+  <!-- Nombre -->
+  <text x="104" y="60" font-family="Georgia, 'Times New Roman', serif" font-size="50" font-weight="700" fill="#1a1312" letter-spacing="1">nami</text>
+  <text x="106" y="84" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#e95a57" letter-spacing="6.5">SUSHI BAR</text>
+</svg>
