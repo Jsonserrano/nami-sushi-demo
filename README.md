@@ -4,7 +4,7 @@ Página de pedidos para un **restaurante de sushi ficticio**, hecha como proyect
 
 **Nami Sushi Bar no existe.** Los platos, los precios y las sedes son inventados, y el pago en línea no está conectado.
 
-**Ver la demo:** https://jsonserrano.github.io/nami-sushi-demo/
+**Ver la demo:** https://jsonserrano.github.io/nami-sushi-demo/ · **Contacto:** [WhatsApp](https://wa.me/573193729772?text=Hola%2C%20vi%20Nami%20Sushi%20Bar%20en%20GitHub)
 
 ![Demo de Nami Sushi Bar](docs/demo.gif)
 
