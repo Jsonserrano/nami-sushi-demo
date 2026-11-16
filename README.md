@@ -4,6 +4,14 @@ Página de pedidos para un **restaurante de sushi ficticio**, hecha como proyect
 
 **Nami Sushi Bar no existe.** Los platos, los precios y las sedes son inventados, y el pago en línea no está conectado.
 
+**Ver la demo:** https://jsonserrano.github.io/nami-sushi-demo/
+
+![Demo de Nami Sushi Bar](docs/demo.gif)
+
+| Inicio | Plato con opciones | Celular |
+|---|---|---|
+| ![Inicio](docs/capturas/01-inicio.jpg) | ![Plato](docs/capturas/03-plato.jpg) | ![Vista en celular](docs/capturas/04-celular.jpg) |
+
 ## Qué tiene
 - Carta con fotos, categorías, buscador y una ventana por plato con sus opciones (tamaño, salsas extra, bebidas…).
 - Carrito de compras que se guarda en el navegador y pide la autorización de datos (Ley 1581 de Colombia).
