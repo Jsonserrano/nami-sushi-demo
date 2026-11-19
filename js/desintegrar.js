@@ -138,6 +138,7 @@
     return { clave: clave(el), hora: performance.now(), area: area, escala: escala, promesa: promesa };
   }
   function prepararPantalla(el) {
+    if (typeof html2canvas !== 'function') return; // sin la librería (sin internet): no hay efecto, pero tampoco error
     if (!el || (foto && foto.clave === clave(el) && performance.now() - foto.hora < 8000)) return;
     foto = fotografiar(el);
     foto.promesa.catch(() => { foto = null; });
