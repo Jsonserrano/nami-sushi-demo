@@ -503,3 +503,22 @@ html:not([lang="es"]) .destacado span { display: block; font-size: 12.5px; line-
 .ini-vapor i:nth-child(3) { left: 62%; animation-delay: 3.2s; }
 .ini-vapor i:nth-child(4) { left: 42%; animation-delay: 4.8s; }
 @keyframes ini-vapor { 0% { opacity: 0; transform: translateY(0) scale(.7); } 25% { opacity: .55; } 100% { opacity: 0; transform: translate(4%, -70%) scale(1.25); } }
+
+/* Relojes inteligentes y pantallas diminutas (hasta 300 px) */
+@media (max-width: 300px) {
+  html { font-size: 14px; }
+  .contenedor { padding: 0 .5rem; }
+  .encabezado-fila { flex-wrap: wrap; justify-content: center; }
+  .logo img { height: 30px; }
+  .ini-portada-fila, .plato, .plato-otras, .tc-dos, .suc-grilla, .franq-grilla,
+  .ini-categorias, .ini-favoritos, .ini-sedes, .pie-columnas, .grilla { grid-template-columns: minmax(0, 1fr) !important; }
+  .ini-portada-fila { min-height: 0; }
+  .ini-texto h1 { font-size: 24px; }
+  .producto { flex-direction: column; }
+  .producto .foto { width: 100%; }
+  button, .boton, a.boton { min-height: 40px; }
+  img { max-width: 100%; height: auto; }
+  .pie-logo img { height: auto; width: calc(100% - 32px); max-width: 200px; }
+}
+/* Televisores 4K y más grandes */
+@media (min-width: 3800px) { body { zoom: 2.4; } }
